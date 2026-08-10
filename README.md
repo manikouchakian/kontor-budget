@@ -1,6 +1,5 @@
 # Kontor Budget
 
-[![tests](https://github.com/USERNAME/kontor-budget/actions/workflows/tests.yml/badge.svg)](https://github.com/USERNAME/kontor-budget/actions/workflows/tests.yml)
 
 Ein Kommandozeilenwerkzeug zur Verwaltung monatlicher Einnahmen und Ausgaben.
 Es berechnet die Sparquote und einen Score und vergleicht den aktuellen Monat
