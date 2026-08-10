@@ -1,0 +1,24 @@
+{
+  "2026-06": {
+    "income": "1800.00",
+    "expenses": {
+      "rent": "450.00",
+      "food": "280.00",
+      "investment": "150.00",
+      "health_insurance": "120.00",
+      "gas": "60.00",
+      "installments": "90.00"
+    }
+  },
+  "2026-07": {
+    "income": "1950.00",
+    "expenses": {
+      "rent": "450.00",
+      "food": "310.00",
+      "investment": "200.00",
+      "health_insurance": "120.00",
+      "gas": "55.00",
+      "installments": "90.00"
+    }
+  }
+}
