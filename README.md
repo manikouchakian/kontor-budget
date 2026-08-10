@@ -14,7 +14,7 @@ Fragen mit doppelter Buchführung in Java um.
 
 - Erfassung von Einkommen und Ausgaben in konfigurierbaren Kategorien
 - Sparquote und prozentualer Anteil jeder Kategorie am Einkommen
-- Score von 0 bis 100, gemessen an einer Zielsparquote von 30 Prozent
+- Score von 0 bis 100, gemessen an einer Zielsparquote von 30 Prozent ( Die Zielsparquote bildet eine Obergrenze für den Score; eine höhere Sparquote erhöht den Score nicht weiter.)
 - Monatsvergleich inklusive der größten Kategorieveränderungen
 - Eingabevalidierung für deutsche und englische Zahlenschreibweise
 - Persistenz als JSON, Beträge verlustfrei gespeichert
@@ -96,8 +96,7 @@ tests/
 Gleitkommazahlen können Dezimalbrüche nicht exakt darstellen. In Python ergibt
 `0.1 + 0.2` den Wert `0.30000000000000004`. Bei einem einzelnen Monat fällt das
 nicht auf, über viele Buchungen summieren sich diese Abweichungen jedoch und
-Salden stimmen nicht mehr. Aus demselben Grund verwendet kein reales
-Finanzsystem Gleitkommazahlen für Geld.
+Salden stimmen nicht mehr. Deshalb werden Geldbeträge in Finanzanwendungen typischerweise nicht als binäre float-Werte repräsentiert.
 
 `money.py` ist die einzige Stelle, die `Decimal` erzeugt. Beträge werden bei der
 Eingabe auf zwei Nachkommastellen quantisiert (`ROUND_HALF_UP`). `float`-Werte
@@ -115,8 +114,7 @@ Werte exakt — nachgewiesen durch einen Roundtrip-Test.
 `MonthEntry`, `Summary` und `Comparison` sind `frozen` dataclasses und geben
 ihre Ausgaben als `MappingProxyType` heraus. Ein einmal erfasster Monat wird
 nicht nachträglich verändert; wer einen anderen Wert braucht, erzeugt ein neues
-Objekt. Dasselbe Prinzip gilt in Buchhaltungssystemen für gebuchte Vorgänge:
-eine fehlerhafte Buchung wird nicht korrigiert, sondern gegengebucht.
+Objekt. Das Modell folgt dem Prinzip, dass bestehende Domain-Objekte nicht mutiert, sondern durch neue Werte ersetzt werden.
 
 ### Trennung nach Verantwortung
 
