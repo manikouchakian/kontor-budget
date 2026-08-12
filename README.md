@@ -9,7 +9,7 @@ Teil der **Kontor**-Reihe, in der ich mich damit beschäftige, wie Geld erfasst
 und bewegt wird. Dieses Projekt ist die persönliche Sicht auf das Thema;
 [kontor-ledger](https://github.com/manikouchakian/kontor-ledger) setzt dieselben
 Fragen mit doppelter Buchführung in Java um.
-![CI](https://github.com/manikouchakian/kontor-budget/actions/workflows/ci.yml/badge.svg)
+
 ## Features
 
 - Erfassung von Einkommen und Ausgaben in konfigurierbaren Kategorien
