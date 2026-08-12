@@ -7,7 +7,7 @@ mit dem Vormonat.
 
 Teil der **Kontor**-Reihe, in der ich mich damit beschäftige, wie Geld erfasst
 und bewegt wird. Dieses Projekt ist die persönliche Sicht auf das Thema;
-[kontor-ledger](https://github.com/USERNAME/kontor-ledger) setzt dieselben
+[kontor-ledger](https://github.com/manikouchakian/kontor-ledger) setzt dieselben
 Fragen mit doppelter Buchführung in Java um.
 
 ## Features
@@ -24,7 +24,7 @@ Fragen mit doppelter Buchführung in Java um.
 Python 3.11 oder neuer.
 
 ```bash
-git clone https://github.com/USERNAME/kontor-budget.git
+git clone https://github.com/manikouchakian/kontor-budget.git
 cd kontor-budget
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
