@@ -5,11 +5,11 @@ Ein Kommandozeilenwerkzeug zur Verwaltung monatlicher Einnahmen und Ausgaben.
 Es berechnet die Sparquote und einen Score und vergleicht den aktuellen Monat
 mit dem Vormonat.
 
-Teil der **Kontor**-Reihe, in der ich mich damit beschäftige, wie Geld erfasst
-und bewegt wird. Dieses Projekt ist die persönliche Sicht auf das Thema;
-[kontor-ledger](https://github.com/manikouchakian/kontor-ledger) setzt dieselben
-Fragen mit doppelter Buchführung in Java um.
-
+Teil der **Kontor**-Reihe. Dort schaue ich mir an, wie Geld erfasst und bewegt
+wird. Dieses Projekt ist die persönliche Sicht darauf: Einnahmen, Ausgaben,
+Sparquote. Der zweite Teil der Reihe ist
+[kontor-zins](https://github.com/manikouchakian/kontor-zins), ein Tilgungsrechner
+in Java.
 ## Features
 
 - Erfassung von Einkommen und Ausgaben in konfigurierbaren Kategorien
